@@ -47,7 +47,7 @@ button:hover {
 
 .tela-jogo {
     display: none;
-    width: 400px;
+    width: 900px;
     background: rgba(0, 0, 0, 0.7);
     color: white;
 }
@@ -94,7 +94,7 @@ button:hover {
 }
 
 #containerCartas img {
-    width: 120px;
+    width: 150px;
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
