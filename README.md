@@ -20,4 +20,4 @@ O objetivo desse projeto é colocar em prática os conhecimentos adquiridos sobr
 
 ## Autor
 
-- [Daniel Torres](https://www.linkedin.com/in/daniel-torres-007a54217/)
+- [Daniel Torres](https://www.linkedin.com/in/daniel-gomes-torres-890102284/)
