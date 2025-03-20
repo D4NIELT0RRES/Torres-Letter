@@ -17,23 +17,24 @@
         <button onclick="iniciarJogo()">Jogar</button>
     </div>
 
-    <!-- Tela do Começo-->
+    <!-- Tela do Começo -->
     <div class="grupo" id="telaComeco">
         <h1>Começar o Jogo</h1>
         <p>Bem-vindo, <span id="exibirNome"></span>!</p>
-        <input type="text" id="nomeUsuarioComeco" placeholder="Seu nome"readonly>
+        <input type="text" id="nomeUsuarioComeco" placeholder="Seu nome" readonly>
         <button onclick="comecarJogo()">Iniciar Jogo</button>
-
     </div>
 
-    <!-- Tela do Jogo-->
+    <!-- Tela do Jogo -->
     <div class="tela-jogo" id="telaJogo">
         <h2>TORRES LETTER</h2>
-        <p id="placar">Pontuação: 0</p> <!-- Placar adicionado -->
+        <p id="placar">Pontuação: 0</p>
         <div id="containerCartas"></div>
-        <button class="botao-jogo" onclick="adivinharMaior()">Maior</button>
-        <button class="botao-jogo" onclick="adivinharMenor()">Menor</button>
-        <button class="botao-jogo" onclick="reiniciarJogo()">Reiniciar Baralho</button>
+        <div class="botoes-jogo">
+            <button class="botao-jogo" onclick="adivinharMaior()">Maior</button>
+            <button class="botao-jogo" onclick="adivinharMenor()">Menor</button>
+            <button class="botao-jogo" onclick="reiniciarJogo()">Reiniciar Baralho</button>
+        </div>
         <p id="mensagem"></p>
     </div>
 

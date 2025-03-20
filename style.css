@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -52,7 +52,7 @@ button:hover {
     color: white;
 }
 
-.grupo{
+.grupo {
     display: none;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -62,10 +62,15 @@ button:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.botoes-jogo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .botao-jogo {
-    display: block;
-    margin: 10px auto;
-    width: 80%;
+    flex: 1;
     padding: 10px;
     background: green;
     border: none;

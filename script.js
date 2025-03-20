@@ -21,8 +21,8 @@ async function iniciarJogo() {
         return;
     }
 
-    document.getElementById("exibirNome").innerText = nomeUsuario
-    document.getElementById("nomeUsuarioComeco").value = nomeUsuario
+    document.getElementById("exibirNome").innerText = nomeUsuario;
+    document.getElementById("nomeUsuarioComeco").value = nomeUsuario;
 
     // Cria e embaralha um novo baralho usando a API
     const resposta = await fetch(`${apiCartas}/new/shuffle/?deck_count=1`);
@@ -31,26 +31,25 @@ async function iniciarJogo() {
 
     // Atualiza a interface do jogo
     document.getElementById("telaLogin").style.display = "none"; // Oculta a tela de login
-    document.getElementById("telaComeco").style.display = "block"; // Exibe a tela do jogo
+    document.getElementById("telaComeco").style.display = "block"; // Exibe a tela do começo
 
     document.getElementById("mensagem").innerText = "Baralho embaralhado! Puxe uma carta."; // Mensagem de status
     document.getElementById("placar").innerText = `Pontuação: ${pontuacao}`; // Atualiza a pontuação exibida
 }
 
 async function comecarJogo() {
-
-    document.getElementById("telaComeco").style.display = "none"; // Oculta a tela de login
+    document.getElementById("telaComeco").style.display = "none"; // Oculta a tela de começo
     document.getElementById("telaJogo").style.display = "block"; // Exibe a tela do jogo
 
-    telaIniciar()
+    telaIniciar();
 }
 
-function telaIniciar(){
-    console.log("Jogo iniciado!")
+function telaIniciar() {
+    console.log("Jogo iniciado!");
 }
+
 // Função para puxar uma carta do baralho
 async function puxarCarta() {
-
     // Faz uma requisição para puxar uma carta do baralho
     const resposta = await fetch(`${apiCartas}/${idBaralho}/draw/?count=1`);
     const dados = await resposta.json();
@@ -89,7 +88,6 @@ async function adivinharMaior() {
     }
     document.getElementById("placar").innerText = `Pontuação: ${pontuacao}`;
     ultimaCarta = novaCarta; // Atualiza a última carta puxada
-
 }
 
 // Função para adivinhar se a próxima carta é MENOR
