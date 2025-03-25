@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo | Torres Letter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="carregarJogo()">
+    <div class="tela-jogo">
+        <h2>TORRES LETTER</h2>
+        <p id="placar">Pontuação: 0</p>
+        <div id="containerCartas"></div>
+        <div class="botoes-jogo">
+            <button class="botao-jogo" onclick="adivinharMaior()">Maior</button>
+            <button class="botao-jogo" onclick="adivinharMenor()">Menor</button>
+            <button class="botao-jogo" onclick="reiniciarJogo()">Reiniciar Baralho</button>
+        </div>
+        <p id="mensagem"></p>
+    </div>
+</body>
+</html>

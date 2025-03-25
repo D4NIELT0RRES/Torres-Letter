@@ -17,7 +17,7 @@ body {
     height: 100vh;
 }
 
-.container, .tela-jogo {
+.container {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -46,19 +46,12 @@ button:hover {
 }
 
 .tela-jogo {
-    display: none;
-    width: 900px;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-}
-
-.grupo {
-    display: none;
-    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 320px;
+    width: 900px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 

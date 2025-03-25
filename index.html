@@ -8,35 +8,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Tela de Login -->
-    <div class="container" id="telaLogin">
+    <div class="container">
         <h2>LOGIN</h2>
         <h3>TORRES LETTER</h3>
         <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
         <button onclick="iniciarJogo()">Jogar</button>
     </div>
-
-    <!-- Tela do Começo -->
-    <div class="grupo" id="telaComeco">
-        <h1>Começar o Jogo</h1>
-        <p>Bem-vindo, <span id="exibirNome"></span>!</p>
-        <input type="text" id="nomeUsuarioComeco" placeholder="Seu nome" readonly>
-        <button onclick="comecarJogo()">Iniciar Jogo</button>
-    </div>
-
-    <!-- Tela do Jogo -->
-    <div class="tela-jogo" id="telaJogo">
-        <h2>TORRES LETTER</h2>
-        <p id="placar">Pontuação: 0</p>
-        <div id="containerCartas"></div>
-        <div class="botoes-jogo">
-            <button class="botao-jogo" onclick="adivinharMaior()">Maior</button>
-            <button class="botao-jogo" onclick="adivinharMenor()">Menor</button>
-            <button class="botao-jogo" onclick="reiniciarJogo()">Reiniciar Baralho</button>
-        </div>
-        <p id="mensagem"></p>
-    </div>
-
 </body>
 </html>
